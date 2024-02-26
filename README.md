@@ -28,3 +28,6 @@ This system can be installed from [UltraLisp](https://ultralisp.org/) like this:
       (format t "Recaptcha invalid, reason: ~A" (re:invalid-reason response))))
 ```
 
+## Documentation
+- [Google Cloud: reCAPTCHA Enterprise documentation](https://cloud.google.com/recaptcha-enterprise/docs)
+- [Google Cloud: Create assessments for websites](https://cloud.google.com/recaptcha-enterprise/docs/create-assessment-website) 
