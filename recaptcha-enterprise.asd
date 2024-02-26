@@ -1,5 +1,5 @@
 (defsystem recaptcha-enterprise
-  :version "0.1.0"
+  :version "0.1.1"
   :author "Dmitrii Kosenkov"
   :license "MIT"
   :depends-on ("dexador" "jonathan")
