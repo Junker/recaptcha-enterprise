@@ -26,7 +26,7 @@
   (getf response :|event|))
 
 (defun name (response)
-  (getf response :|name| ))
+  (getf response :|name|))
 
 (defun validp (response)
   (getf (token-properties response) :|valid|))

@@ -7,4 +7,6 @@
            #:name
            #:validp
            #:invalid-reason
-           #:score))
+           #:score
+           #:*api-key*
+           #:*project-id*))
