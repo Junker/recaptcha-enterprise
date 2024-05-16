@@ -6,8 +6,11 @@
   "your Google Cloud project ID")
 
 (defun verify (key-id token &optional (action "LOGIN"))
-  (assert (not (null *api-key*)))
-  (assert (not (null *project-id*)))
+  (check-type *api-key* string)
+  (check-type *project-id* string)
+  (check-type token string)
+  (check-type key-id string)
+  (check-type action string)
   (let* ((response (dex:post (format nil "https://recaptchaenterprise.googleapis.com/v1/projects/~A/assessments?key=~A"
                                      *project-id* *api-key*)
                              :headers '(("Content-Type" . "application/json"))
